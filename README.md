@@ -12,7 +12,7 @@ A continuacion les dejo las funcionalidades de la pagina
 
 A continuacion les dejo las intrucciones de como usar el programa
 
-1. Clonar el repositorio: git clone https://github.com/joaoABP/my_proyect.git
+1. Clonar el repositorio: git clone https://github.com/joaoABP/my_proyect/tree/EntregaCoder
 2. Ingresar a la carpeta 'my_proyect/farmacia' mediate el comando cd.
 3. Crear y activar un entorno virtual.
 4. ejecutar el comando 'py manage.py runserver' en el bash.
