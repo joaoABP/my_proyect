@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Farmacia</title>
+    <style>
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin-right: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'crear_medicamento' %}">Agregar Medicamento</a></li>
+            <li><a href="{% url 'crear_cliente' %}">Agregar Cliente</a></li>
+            <li><a href="{% url 'crear_venta' %}">Agregar Venta</a></li>
+            <li>
+                <form action="{% url 'buscar_medicamento' %}" method="get" style="display:inline;">
+                    <input type="text" name="q" placeholder="Buscar Medicamento">
+                    <button type="submit">Buscar</button>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

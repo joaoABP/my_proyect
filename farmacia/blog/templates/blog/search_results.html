@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Resultados de búsqueda para "{{ query }}"</h2>
+{% if resultados %}
+    <ul>
+        {% for medicamento in resultados %}
+        <li>
+            <strong>{{ medicamento.nombre }}</strong> - Stock: {{ medicamento.stock }} - Precio: ${{ medicamento.precio }}
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>No se encontraron medicamentos.</p>
+{% endif %}
+{% endblock %}
