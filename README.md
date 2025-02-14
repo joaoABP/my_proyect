@@ -14,7 +14,6 @@ A continuacion les dejo las intrucciones de como usar el programa
 
 1. Clonar el repositorio: git clone https://github.com/joaoABP/my_proyect.git
 2. Ingresar a la carpeta 'my_proyect/farmacia' mediate el comando cd.
-3. Crear y activar un entorno virtual.
-4. Usa el comando 'py manage.py migrate' para todo funcione correctamente
-5. Ejecutar el comando 'py manage.py runserver' en el bash.
-6. Entra al link de la consola http://127.0.0.1:8000/
+3. Usa el comando 'py manage.py migrate' para todo funcione correctamente
+4. Ejecutar el comando 'py manage.py runserver' en el bash.
+5. Entra al link de la consola http://127.0.0.1:8000/
